@@ -1,10 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Статус питания</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body></body>
+  <body>
+    <center><h1>Исследование и оценка статуса питания</h1></center>
+    <form action="">
+      <p><b>Пол</b><br>
+      <input type="radio" name="sex" value="m"> М <br>
+      <input type="radio" name="sex" value="f"> Ж <br>
+      </p>
+    <p>
+      <label for="age"> <b>Возраст:</b></label>
+    <input type="number" size="3"
+    step="1" min="14" max="99" value="14" name="age"></p>
+    <p> <strong> Дополнительные требования: </strong>
+      <ol>
+        <li><label for="1"> Семейное положение</label> <input type="text" size="60"> </li><br>
+        <li><label for="2"></label>Дети</label> <input type="text" size="60"></li><br>
+        <li><label for="3"></label>Физиологическое состояние</label> <input type="text" size="60"></li><br>
+        <li><label for="4"></label>Число ОРЗ за год</label> <input type="text" size="60"></li><br>
+        <li><label for="5"></label>Наличие хронических заболеваний</label> <input type="text" size="60"></li><br>
+        <li><label for="6"></label>Характеристика условий труда и быта:</label></li><br>
+        <ol>
+          <li><label for="6.1"></label>Условия проживания и степень коммунального обеспечения</label> <input type="text" size="60"></li><br>
+          <li><label for="6.2"></label>Наличие и характер трудовой деятельности</label> <input type="text" size="60"></li><br>
+          <li><label for="6.3"></label>Профессиональные вредности</label> <input type="text" size="60"></li><br>
+          <li><label for="6.4"></label>Занятия спортом</label> <input type="text" size="60" placeholder="вид, регулярность, продолжительность в неделю, квалификационные успехи"></li><br>
+        </ol>
+        <li><label for="6"></label>Вредные привычки:</label></li><br>
+        <ol>
+        <li><label for="7.1"></label>Курение</label> <input type="text" size="60" placeholder="если да, то сколько в день"></li><br>
+        <li><label for="7.2"></label>Употребление спиртных напитков</label> <input type="text" size="60" placeholder="если да, то какие, частота, сколько в день/неделю"></li><br>
+        </ol>
+      </ol>
+    </p>
+  </form>
+  </body>
 </html>
